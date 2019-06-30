@@ -1,0 +1,97 @@
+.fond-titre {
+
+  width: 50vw;
+}
+
+h1 {
+  position: absolute;
+  font-size: 3rem;
+  left: 4%;
+  margin-top: 5vh;
+  font-weight: lighter;
+
+}
+
+.formalite{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.formalite .info .Prenom {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 45px;
+  width: 647px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.formalite .info .nom {
+  height: 45px;
+  width: 647px;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.formalite .info .mail {
+  height: 45px;
+  width: 647px;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.formalite .message {
+  height: 200px;
+  width: 648px;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bouton {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 20px;
+  width: 150px;
+  color: #4C3365;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: #4C3365;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: #4C3365;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+::-ms-input-placeholder {
+  color: #4C3365;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+::placeholder {
+  color: #4C3365;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+/*# sourceMappingURL=julien.css.map */

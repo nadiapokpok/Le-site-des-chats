@@ -1,0 +1,218 @@
+@import 'julien.css';
+@import 'lilian.css';
+@import 'stylenadia.css';
+
+$fontFamilyTitles: 'Arial';
+
+html, body {
+  margin: 0;
+  background-color: #FCE5DE;
+}
+
+/*  PARTIE 4 (Lilian) */
+#P4 {
+  margin-top: 20vh;
+}
+
+/*  Titre avec effets */
+#Titre4 {
+  position: relative;
+  left: 27vw;
+  img {
+    position: absolute;
+    width: 55vw;
+  }
+  p  {
+    position: absolute;
+    font-family: $fontFamilyTitles;
+    font-size: 3rem;
+    text-align: right;
+    margin: 1vw 0 0 1vw;
+  }
+}
+
+/*  Sites Web avec effets */
+#ContainerSlider4 {
+  margin: 0 2vw;
+  #Slider4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 60vh;
+    width: 100vw;
+    #Box41 {
+      flex-grow: 1;
+      img {
+        width: 27vw;
+      }
+    }
+    #Box42 {
+      flex-grow: 2;
+      img {
+        width: 33vw;
+      }
+    }
+    #Box43 {
+      flex-grow: 1;
+      img {
+        width: 27vw;
+      }
+    }
+  }
+}
+
+/*  PARTIE 5 (Lilian 2, le retour)  */
+#P5 {
+  position: relative;
+  margin-top: 30vh;
+}
+
+/*  Forumle 1 avec effets */
+#Container51  {
+  #Formule51  {
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    #Cadre51  {
+      width: 33vw;
+      text-align: right;
+      #Titre51  {
+        border: thick solid rgba(255, 255, 255, 0.603);
+        h1  {
+          font-size: 2rem;
+          background-color: #ffffffa6;
+          margin: 1vw 1vw 1vw 0;
+          padding: 2vw;
+        }
+      }
+    }
+    #Texte51  {
+      visibility: hidden;
+      flex-grow: 2;
+      margin-left: 1vw;
+      padding-left: 2vw;
+      background-color: #ffffffa6;
+      h3  {
+        font-size: 1.4rem;
+      }
+      p {
+        text-align: right;
+        font-size: 1rem;
+        padding-right: 2vw;
+      }
+    }
+  }
+}
+
+#Container51 #Formule51:hover  {
+  #Texte51 {
+    visibility: visible;
+  }
+}
+
+/*  Forumle 2 avec effets */
+#Container52  {
+  #Formule52  {
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    #Cadre52  {
+      width: 33vw;
+      text-align: right;
+      #Titre52  {
+        border: thick solid rgba(255, 255, 255, 0.603);
+        h1  {
+          font-size: 2rem;
+          background-color: #ffffffa6;
+          margin: 1vw 1vw 1vw 0;
+          padding: 2vw;
+        }
+      }
+    }
+    #Texte52  {
+      visibility: hidden;
+      flex-grow: 2;
+      margin-left: 1vw;
+      padding-left: 2vw;
+      background-color: #ffffffa6;
+      h3  {
+        font-size: 1.4rem;
+      }
+      p {
+        text-align: right;
+        font-size: 1rem;
+        padding-right: 2vw;
+      }
+    }
+  }
+}
+
+#Container52 #Formule52:hover  {
+  #Texte52 {
+    visibility: visible;
+  }
+}
+
+/*  Forumle 3 avec effets */
+#Container53  {
+  #Formule53  {
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    #Cadre53  {
+      width: 33vw;
+      text-align: right;
+      #Titre53  {
+        border: thick solid rgba(255, 255, 255, 0.603);
+        h1  {
+          font-size: 2rem;
+          background-color: #ffffffa6;
+          margin: 1vw 1vw 1vw 0;
+          padding: 2vw;
+        }
+      }
+    }
+    #Texte53  {
+      visibility: hidden;
+      flex-grow: 2;
+      margin-left: 1vw;
+      padding-left: 2vw;
+      background-color: #ffffffa6;
+      h3  {
+        font-size: 1.4rem;
+      }
+      p {
+        text-align: right;
+        font-size: 1rem;
+        padding-right: 2vw;
+      }
+    }
+  }
+}
+
+#Container53 #Formule53:hover  {
+  #Texte53 {
+    visibility: visible;
+  }
+}
+
+/*  Titre avec effets */
+#Titre54 {
+  margin: 20vh auto;
+  position: relative;
+  left: 27vw;
+  img {
+    position: absolute;
+    width: 47vw;
+  }
+  p  {
+    position: absolute;
+    font-family: $fontFamilyTitles;
+    font-size: 3rem;
+    text-align: right;
+    margin: 1vw 0 0 1vw;
+  }
+}
