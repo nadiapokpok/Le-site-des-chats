@@ -1,218 +1,377 @@
-@import 'julien.css';
-@import 'lilian.css';
-@import 'stylenadia.css';
+$fondTexte:#A20373;
+$font:'Muli', sans-serif;
+$mauve:#DEB3ED;
 
-$fontFamilyTitles: 'Arial';
 
-html, body {
-  margin: 0;
-  background-color: #FCE5DE;
+*{
+    margin: 0;
+    padding: 0; 
+    // max-width:1900px ;
+    // width: 100vw;
+ 
+    
 }
 
-/*  PARTIE 4 (Lilian) */
-#P4 {
-  margin-top: 20vh;
-}
+/*-----------------HEADER------------*/
 
-/*  Titre avec effets */
-#Titre4 {
-  position: relative;
-  left: 27vw;
-  img {
+/*--------MENU BURGER------------*/
+
+
+#homepage{
+    
+    //position: relative;
+  
+    #slideonmenu{
+    top: 5vh;
+    right: 20px;
     position: absolute;
-    width: 55vw;
-  }
-  p  {
-    position: absolute;
-    font-family: $fontFamilyTitles;
-    font-size: 3rem;
-    text-align: right;
-    margin: 1vw 0 0 1vw;
-  }
-}
-
-/*  Sites Web avec effets */
-#ContainerSlider4 {
-  margin: 0 2vw;
-  #Slider4 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding-top: 60vh;
-    width: 100vw;
-    #Box41 {
-      flex-grow: 1;
-      img {
-        width: 27vw;
-      }
-    }
-    #Box42 {
-      flex-grow: 2;
-      img {
-        width: 33vw;
-      }
-    }
-    #Box43 {
-      flex-grow: 1;
-      img {
-        width: 27vw;
-      }
-    }
-  }
-}
-
-/*  PARTIE 5 (Lilian 2, le retour)  */
-#P5 {
-  position: relative;
-  margin-top: 30vh;
-}
-
-/*  Forumle 1 avec effets */
-#Container51  {
-  #Formule51  {
-    width: 100vw;
-    max-width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    #Cadre51  {
-      width: 33vw;
-      text-align: right;
-      #Titre51  {
-        border: thick solid rgba(255, 255, 255, 0.603);
-        h1  {
-          font-size: 2rem;
-          background-color: #ffffffa6;
-          margin: 1vw 1vw 1vw 0;
-          padding: 2vw;
+    z-index: 7;
+    max-width: 40vh;
+    
+        #menulogo{
+            
+            width: 13vh;
+            right: 3vh;
+            position: absolute;
+            z-index: 99;
+            //border: 3px solid;
         }
-      }
-    }
-    #Texte51  {
-      visibility: hidden;
-      flex-grow: 2;
-      margin-left: 1vw;
-      padding-left: 2vw;
-      background-color: #ffffffa6;
-      h3  {
-        font-size: 1.4rem;
-      }
-      p {
-        text-align: right;
-        font-size: 1rem;
-        padding-right: 2vw;
-      }
-    }
-  }
-}
 
-#Container51 #Formule51:hover  {
-  #Texte51 {
-    visibility: visible;
-  }
-}
-
-/*  Forumle 2 avec effets */
-#Container52  {
-  #Formule52  {
-    width: 100vw;
-    max-width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    #Cadre52  {
-      width: 33vw;
-      text-align: right;
-      #Titre52  {
-        border: thick solid rgba(255, 255, 255, 0.603);
-        h1  {
-          font-size: 2rem;
-          background-color: #ffffffa6;
-          margin: 1vw 1vw 1vw 0;
-          padding: 2vw;
+        #listMenu {
+        margin-top: 45%;
+        padding: 35px 20px;
+        text-transform: uppercase;
+        font-family: $font;
+        line-height: 1.7em;
+        display: none;
+        font-size: 1.3em;
+        z-index: 9;
+        border: 3px solid;
+        
+        ul, a{
+            margin-top: 5%;
+            list-style: none;
+            text-decoration: none;
+            z-index: 7;
+            color: rgb(162, 3, 115);
+            text-align: right;
+            //transition: all 0.5s ease-out;
         }
-      }
     }
-    #Texte52  {
-      visibility: hidden;
-      flex-grow: 2;
-      margin-left: 1vw;
-      padding-left: 2vw;
-      background-color: #ffffffa6;
-      h3  {
-        font-size: 1.4rem;
-      }
-      p {
-        text-align: right;
-        font-size: 1rem;
-        padding-right: 2vw;
-      }
-    }
-  }
-}
 
-#Container52 #Formule52:hover  {
-  #Texte52 {
-    visibility: visible;
-  }
-}
+    img{
+        transition: all 2s ease-out;
 
-/*  Forumle 3 avec effets */
-#Container53  {
-  #Formule53  {
-    width: 100vw;
-    max-width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    #Cadre53  {
-      width: 33vw;
-      text-align: right;
-      #Titre53  {
-        border: thick solid rgba(255, 255, 255, 0.603);
-        h1  {
-          font-size: 2rem;
-          background-color: #ffffffa6;
-          margin: 1vw 1vw 1vw 0;
-          padding: 2vw;
+        &:hover {
+        transform: rotate(180deg);
         }
-      }
     }
-    #Texte53  {
-      visibility: hidden;
-      flex-grow: 2;
-      margin-left: 1vw;
-      padding-left: 2vw;
-      background-color: #ffffffa6;
-      h3  {
-        font-size: 1.4rem;
-      }
-      p {
-        text-align: right;
-        font-size: 1rem;
-        padding-right: 2vw;
-      }
+
+    span:hover + #listMenu{
+        display: block;
     }
-  }
+
+    #listMenu:hover{
+        display:block;
+    }
+    a:hover{
+        background-color: rgb(255, 109, 11);
+    }
+}  
+
+/*---------------FOND CHAT------------*/
+      
+/*#fondheader {
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    //height: 130vh;
 }
 
-#Container53 #Formule53:hover  {
-  #Texte53 {
-    visibility: visible;
-  }
+/*#fondheader #cat1{
+max-width: 100%;
+height: auto;
+z-index: 1;
+}*/
+
+/*----------LOGO et TEXTE--------------------*/
+ 
+    #bloctext{
+        position: relative;
+        //display: flex;
+        //border: 3px solid;
+    
+        background-image: url("./images/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 130vh;
+        //width: 100vw;
+
+        #fondheader{
+            //display: flex;
+            //flex-direction: column;
+            //border: 3px solid;
+            // margin: 2.5%;
+            width: 11vw;
+            //height: 5em;
+            
+
+            #logocat{
+                width: 100%;
+                /*margin-top: 5%;
+                margin-left: 3%;
+                padding-left: 8%;
+                padding-top: 7%;*/
+            }
+            #initial{
+                text-align: center;
+                //margin-left: 5%;
+                font-family: $font;
+                font-size: 1.5em;
+                margin-top: -7%;
+                //padding-left: 16%;
+                }   
+        }
+    #textimg{
+        width:33vw;
+        position: absolute;
+        top: 116vh;
+        left: 23vw;
+        // bottom: 0;
+        //justify-self: end;
+        //border: 3px solid;
+        //width: 100%;
+        //margin-top: 58%;
+        
+        #legendimg{
+           padding-top: 1%;
+           padding-bottom: 1%;
+            font-family: $font;
+            font-size: 1.8em;
+            background-color: $fondTexte;
+            text-align: center;
+          
+            box-shadow: 5px 0px 7px 1px rgba(82, 82, 117, 0.4);
+        }
+    } 
+    #wca{
+       
+
+        position: absolute;
+        top: 57vh;
+        right: 21vw;;
+        width: 27%;
+        //border: 3px solid red;
+        //margin-top: 20%;
+        //padding: 3% 1%;
+        //height: 25%;
+        //margin-bottom: 19%;
+        //padding-right: 20%;
+
+        #titrepart1, #titrepart2{
+
+            padding: 1% 10%;
+            font-family: $font;
+            font-size: 2.7em;
+            text-align: center;  
+            box-shadow: 5px 0px 7px 1px rgba(82, 82, 117, 0.4);
+            //border: 3px solid; 
+        }
+        #titrepart1{
+            
+            background-color: $fondTexte;
+            margin-left: 1vw;
+            //margin-top: 15%;
+          
+        }
+        #titrepart2{
+            background-color: $fondTexte;
+            //margin-left: 35%;
+            //margin-top: 1%;
+           margin-top: 1%;
+           width: 27vw;
+        }
+    }
+        
+}
 }
 
-/*  Titre avec effets */
-#Titre54 {
-  margin: 20vh auto;
-  position: relative;
-  left: 27vw;
-  img {
-    position: absolute;
-    width: 47vw;
-  }
-  p  {
-    position: absolute;
-    font-family: $fontFamilyTitles;
-    font-size: 3rem;
-    text-align: right;
-    margin: 1vw 0 0 1vw;
-  }
+   
+
+
+
+/*---------------MAIN------------*/
+
+/*------------NAV-------------------*/
+        #menu{
+        position: fixed; /* Make it stick/fixed */
+        top: -50px; /* Hide the navbar 50 px outside of the top view */
+        width: 100%; /* Full width */
+        z-index: 15;
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
+   }
+
+        #menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+         align-items: center;
+         margin-top: -25px;
+         height:7vh; 
+        list-style: none;
+        /*border: 3px solid red;*/
+        background-color: $mauve;padding: 1% 10%;
+        
+
+
+        li {
+        margin-left: 35px;
+        padding-left: 0px;
+        padding-right: 25px;
+        list-style: none;
+        font-size: 2rem;
+    
+    }
+
+        a {
+        text-decoration: none;
+        color:$fondTexte;
+        padding: 5px;
+    }
+
+        a:hover {
+        border-bottom: #e67e22 3px solid;
+   
+    }
+
+        }
+
+        
+/*-----------------PART  les services------------------*/
+
+        #part1{
+            background-color: #E9DCC5;
+
+            #offres{
+            //border: 3px solid;
+            position: relative;
+            height: 33vh;
+
+            #catarchi1{
+                padding-left: 5%;
+            }
+               
+            #identite, #archi{
+            //border: 3px solid;
+            position: absolute;
+            padding: 1% 7%;
+            background-color: $fondTexte;
+            font-family: $font;  
+            font-size: 2.7em;  
+        }
+            #identite{
+            width: 35%;
+            margin-left:40%; 
+            margin-top:1%;
+            padding-right: 1%;
+            text-align: center;
+            z-index: 9;
+            top: -9%;
+        }
+            
+            #archi{
+            width: 48%;
+            margin-left:33%;
+            padding-left: 1%;
+            margin-top: -10%;
+            text-align: center;
+            z-index: 8;
+            
+        }        
+    }
+            
+            #card{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            margin-top: 1%;
+            
+            //border: 3px solid;
+               
+            
+            #card1,#card2, #card3{
+            display:flex;
+            flex-direction: column;
+            width:15vw;
+            height: 45vh;
+            padding: 3%;
+            font-family: $font;
+            opacity: 0.5;
+            transition: all 0.5s ease;
+            background-color:rgba(222, 179, 137, 0.3);
+            color: $fondTexte;
+            font-size: 1em;
+            line-height: 1.5em;
+            text-align: center;
+            border-radius: 0.3em;
+            //border: 3px solid;
+            }
+            #card1:hover,
+            #card2:hover,
+            #card3:hover {
+            opacity: 0.8;
+
+        }
+
+            #card2{
+                height: 49vh;
+            }
+
+            #card1, #card3{
+              
+                margin-top: 5%;
+        }
+       
+            #defdesign, #realisation, #gestion{
+                font-size: 1.3em;
+                padding-bottom: 15%;
+            }
+    }
+            
 }
+/*---------------PART2 Portfolio--------------------*/
+
+
+    
+    #part2 {
+        position: relative;
+        background-color: #E9DCC5;
+        height: 45vh;;
+        #garantie1, #garantie2{
+        font-family: $font;  
+        font-size: 2.7em;  
+        }
+        #garantie1 {
+            position: absolute;
+            left: 3%;
+            top: 17%;
+            padding: 1% 5%;
+            background-color: $fondTexte;
+            font-family: $font;  
+        }
+        #garantie2 {
+            position: absolute;
+            left: 11%;
+            top: 47%;
+            padding: 1% 7%;
+            background-color: $fondTexte;
+            font-family: $font;  
+        }
+        #catpart {
+            position: absolute;
+            right: 9%;
+            top: 7%;
+        }
+    }
