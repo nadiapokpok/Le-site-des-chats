@@ -8,24 +8,32 @@ function scrollFunction() {
     } else {
         document.getElementById("menu").style.top = "-55px";
     }
-} 
+}
 
 //Fenetre Modale
 
 var part1 = document.getElementById('partie1');
+var part2 = document.getElementById('partie2');
+var part3 = document.getElementById('partie3');
 
 
 
-function show(choice){
+
+function show(choice) {
     var choix = document.getElementById(choice);
-    if (choix.style.display == 'none'){
-        choix.style.display = 'block'
-    }else{
-        choix.style.display = 'none';
-    }
+
+    choix.style.display = 'block';
+
+
 }
 
-function over(choiceOne){
+
+function hide(cache) {
+    var choixBis = document.getElementById(cache);
+    choixBis.style.display = 'none';
+}
+
+/*function over(choiceOne) {
     console.log(choiceOne);
     var monElt = document.getElementById(choiceOne);
     console.log(monElt);
@@ -33,10 +41,10 @@ function over(choiceOne){
     monElt.style.backgroundColor = 'red';
 }
 
-function disparait(choiceTwo){
+function disparait(choiceTwo) {
     console.log(choiceTwo);
     var monElt = document.getElementById(choiceTwo);
     console.log(monElt);
     console.log(monElt.style)
     monElt.style.backgroundColor = '';
-}
+}*/

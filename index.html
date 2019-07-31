@@ -16,12 +16,12 @@
             <span><img id="menulogo" src="images/menu.png"></span>
             <div id="listMenu">
                 <ul>
-                    <li><a href="#agencepourchats">Agence</a></li>
+
                     <li><a href="#offres">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Formules</a></li>
+                    <li><a href="#partenaires">Travaux</a></li>
+
                     <li><a href="#">Equipe</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -59,10 +59,10 @@
             <ul>
 
                 <li><a href="#offres">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#partenaires">Travaux</a></li>
 
                 <li><a href="#">Equipe</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -106,12 +106,97 @@
                 <h2 id="garantie2">des partenaires satisfaits</h2>
                 <img id="catpart" src="images/boss.png">
             </div>
-            <div id="square">
-                <img src = 'images/asso.png' alt='asso'id="partie1" onclick="show('texto1')" onmouseover="over(this.id)" onmouseout="disparait(this.id)" ></div>
-                 
-                  
+        </section id="part3">
+        <div id="square">
+            <div id="square1">
+                <h1>Associations</h1>
+                <p id="texto1" onclick="hide('texto1')">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magnam, architecto facilis ut
+                    sequi
+                    labore eius quisquam eligendi, unde iure, tenetur recusandae alias sunt modi odit itaque voluptates
+                    expedita obcaecati rerum!</p>
+                <img src='images/asso.png' alt='asso' id="partie1" onclick="show('texto1')">
+
             </div>
+
+            <div id="square2">
+                <h1>Evènements</h1>
+                <p id="texto2" onclick="hide('texto2')">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magnam, architecto facilis ut
+                    sequi
+                    labore eius quisquam eligendi, unde iure, tenetur recusandae alias sunt modi odit itaque voluptates
+                    expedita
+                    obcaecati rerum!</p>
+                <img src='images/asso.png' alt='asso' id="partie2" onclick="show('texto2')">
+
+            </div>
+
+            <div id="square3">
+                <h1>Conseils</h1>
+                <p id="texto3" onclick="hide('texto3')">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magnam, architecto facilis ut
+                    sequi
+                    labore eius quisquam eligendi, unde iure, tenetur recusandae alias sunt modi odit itaque voluptates
+                    expedita
+                    obcaecati rerum!</p>
+                <img src='images/asso.png' alt='asso' id="partie3" onclick="show('texto3')">
+
+            </div>
+        </div>
+
+        </div>
+        </div>
         </section>
+
+        <section id="contact">
+
+            <h1 id="formtitre">Contactez nous !</h1>
+
+
+            <!-- Formulaire -->
+
+            <div id="formalite">
+                <form style="text-align: center; margin-top: 6%;">
+                    <div class="info">
+                        <input class="Prenom" type="text" name="nom" id="nom" placeholder="Prenom:" />
+                        <br /><br />
+                        <input class="nom" type="text" name="nom" id="nom" placeholder="Nom:" />
+                        <br /><br />
+                        <input class="mail" type="text" name="nom" id="nom" placeholder="Mail:" />
+                        <br /><br />
+                    </div>
+                    <textarea class="Votre message" placeholder="Message:" rows="5" cols="45"></textarea>
+                    <!--<textarea values="Votre message :" class="message" name="message" id="message" cols="40" rows="5"></textarea>-->
+                    <br /><br />
+                    <input class="bouton" type="submit" value="Envoyer" />
+                </form>
+        </section>
+    </main>
+
+
+
+    <footer>
+
+        <div id="pied">
+            <ul id="liens">
+                <li><a href="http://wikipedia.org" target="_blank">About us</a></li><br>
+                <li><a href="http://wikipedia.org" target="_blank">FAQ</a></li><br>
+                <li><a href="http://wikipedia.org" target="_blank">Careers</a></li><br>
+                <li><a href="http://wikipedia.org" target="_blank">Policy</a></li>
+            </ul>
+            <div id="middlepied">
+                <img id="catpied" src="images/logocat.png">
+                <p id="parapied">2019 WCA-Simplon-All Rights Reserved </p>
+            </div>
+            <div id="adresse">Web Cat Agency<br><br>
+                21 rue de la Vanne<br>92120 Montrouge<br><br>
+                06 01 02 03 04<br>
+                contact@wca.fr </div>
+        </div>
+
+    </footer>
+
+
     </main>
 
 

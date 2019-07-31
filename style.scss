@@ -6,7 +6,7 @@ $mauve:#DEB3ED;
 *{
     margin: 0;
     padding: 0; 
-    // max-width:1900px ;
+    max-width:1351px ;
     // width: 100vw;
  
     
@@ -46,7 +46,7 @@ $mauve:#DEB3ED;
         display: none;
         font-size: 1.3em;
         z-index: 9;
-        border: 3px solid;
+        //border: 3px solid;
         
         ul, a{
             margin-top: 5%;
@@ -308,7 +308,7 @@ z-index: 1;
             height: 45vh;
             padding: 3%;
             font-family: $font;
-            opacity: 0.5;
+            opacity: 0.3;
             transition: all 0.5s ease;
             background-color:rgba(222, 179, 137, 0.3);
             color: $fondTexte;
@@ -374,4 +374,170 @@ z-index: 1;
             right: 9%;
             top: 7%;
         }
+    
+   
+#square{
+        display: flex;
+        justify-content: space-around;
+       
     }
+}
+
+/*--------------Part3Porfolio bis---------------*/
+
+#square{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 45vh;    
+    align-items: center;
+    background-color: #E9DCC5;
+    #square1, #square2, #square3{
+        width: 22%;
+        position: relative;
+    
+       
+        img{
+           width: 100%;
+           //&:hover{
+            //opacity: 0.5;
+}
+           
+           
+        }
+
+        h1{
+            background-color: $fondTexte;
+            text-align: center;
+            padding: 3% 0% 3% 0%;
+            margin-bottom: 3%;
+         //border: 3px solid;
+        }
+        #texto1, #texto2, #texto3{
+        width: 100%;
+        position: absolute;
+        display: none;
+        background-color: rgba(222, 179, 237, 0.5);
+        font-family: $font;
+        padding-top: 11%;
+        padding-bottom: 11%;
+        //border: 3px solid;
+        }
+    }
+/*------------------team----------------*/
+
+/*--------------FORM--------------------*/
+
+        #contact{
+        //border: 3px solid;
+        background-color: #E9DCC5;
+
+        #formtitre, #formalite{
+        font-family: $font;
+        }
+
+        #formtitre{
+        border: 3px solid;
+        font-size: 2.7em; 
+        background-color: $fondTexte;
+        text-align: center;
+        margin-left: 35%;
+        margin-right: 35%;
+        }
+        #formalite{
+            //border: 3px solid;
+            height: 75%;
+
+        #formalite, .prenom{
+            font-size: 1.5em;
+            color: #FF6b0B;
+            background: $mauve;
+            padding: 1%;
+            border: none;
+        }
+        #formalite, .nom{
+            font-size: 1.5em;
+            color: #FF6b0B;
+            background: $mauve;
+            border: none;
+            padding: 1%;
+        }
+        #formalite, .mail{
+            font-size: 1.5em;
+            color: #FF6b0B;
+            background: $mauve;
+            border: none;
+            padding: 1%;
+        }
+        #formalite, .message{
+            font-size: 1.5em;
+            color: #FF6b0B;
+            background: $mauve;
+            border: none;
+            padding: 1%;
+        }
+        #formalite, .bouton{
+            font-size: 1.5em;
+        
+            background: $mauve;
+            border: none;
+            padding: 1%;
+        }
+        }
+        
+
+    }
+/*----------------FOOTER--------------*/
+       
+        #pied{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        height: 45vh;    
+        align-items: center;
+        background-color: #E9DCC5;
+
+        #liens, #middlepied, #adresse{
+        font-family: $font;
+        color: $fondTexte;
+        }
+
+        #liens{
+            text-transform: uppercase;
+            line-height: 1.7em;
+            font-size: 1.3em;
+
+            li{
+            list-style-type: none;
+            }
+            ul, a{
+                
+                list-style: none;
+                text-decoration: none;
+                
+                color: $fondTexte;
+                text-align: right;
+            }
+            a:hover{
+                background-color: rgb(255, 109, 11);
+            }
+        } 
+            #middlepied{
+                //border: 3px solid;
+           
+                #catpied{
+                //border: 3px solid;
+                width: 85%;
+                margin-left: 7%;
+               
+                }
+                #parapied{
+                text-align: center;
+                }
+            }
+}
+    
+       
+    

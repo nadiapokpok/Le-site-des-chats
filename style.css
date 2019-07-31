@@ -46,7 +46,6 @@ z-index: 1;
   display: none;
   font-size: 1.3em;
   z-index: 9;
-  border: 3px solid;
 }
 
 #homepage #slideonmenu #listMenu ul, #homepage #slideonmenu #listMenu a {
@@ -273,7 +272,7 @@ z-index: 1;
   height: 45vh;
   padding: 3%;
   font-family: "Muli", sans-serif;
-  opacity: 0.5;
+  opacity: 0.3;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: rgba(222, 179, 137, 0.3);
@@ -337,5 +336,174 @@ z-index: 1;
   position: absolute;
   right: 9%;
   top: 7%;
+}
+
+#part2 #square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*--------------Part3Porfolio bis---------------*/
+#square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 45vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E9DCC5;
+}
+
+#square #square1, #square #square2, #square #square3 {
+  width: 22%;
+  position: relative;
+}
+
+#square #square1 img, #square #square2 img, #square #square3 img {
+  width: 100%;
+}
+
+#square h1 {
+  background-color: #A20373;
+  text-align: center;
+  padding: 3% 0% 3% 0%;
+  margin-bottom: 3%;
+}
+
+#square #texto1, #square #texto2, #square #texto3 {
+  width: 100%;
+  position: absolute;
+  display: none;
+  background-color: rgba(222, 179, 237, 0.5);
+  font-family: "Muli", sans-serif;
+  padding-top: 11%;
+  padding-bottom: 11%;
+}
+
+/*------------------team----------------*/
+/*--------------FORM--------------------*/
+#contact {
+  background-color: #E9DCC5;
+}
+
+#contact #formtitre, #contact #formalite {
+  font-family: "Muli", sans-serif;
+}
+
+#contact #formtitre {
+  border: 3px solid;
+  font-size: 2.7em;
+  background-color: #A20373;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#contact #formalite {
+  height: 75%;
+}
+
+#contact #formalite #formalite, #contact #formalite .prenom {
+  font-size: 1.5em;
+  color: #FF6b0B;
+  background: #DEB3ED;
+  padding: 1%;
+  border: none;
+}
+
+#contact #formalite #formalite, #contact #formalite .nom {
+  font-size: 1.5em;
+  color: #FF6b0B;
+  background: #DEB3ED;
+  border: none;
+  padding: 1%;
+}
+
+#contact #formalite #formalite, #contact #formalite .mail {
+  font-size: 1.5em;
+  color: #FF6b0B;
+  background: #DEB3ED;
+  border: none;
+  padding: 1%;
+}
+
+#contact #formalite #formalite, #contact #formalite .message {
+  font-size: 1.5em;
+  color: #FF6b0B;
+  background: #DEB3ED;
+  border: none;
+  padding: 1%;
+}
+
+#contact #formalite #formalite, #contact #formalite .bouton {
+  font-size: 1.5em;
+  background: #DEB3ED;
+  border: none;
+  padding: 1%;
+}
+
+/*----------------FOOTER--------------*/
+#pied {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 45vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E9DCC5;
+}
+
+#pied #liens, #pied #middlepied, #pied #adresse {
+  font-family: "Muli", sans-serif;
+  color: #A20373;
+}
+
+#pied #liens {
+  text-transform: uppercase;
+  line-height: 1.7em;
+  font-size: 1.3em;
+}
+
+#pied #liens li {
+  list-style-type: none;
+}
+
+#pied #liens ul, #pied #liens a {
+  list-style: none;
+  text-decoration: none;
+  color: #A20373;
+  text-align: right;
+}
+
+#pied #liens a:hover {
+  background-color: #ff6d0b;
+}
+
+#pied #middlepied #catpied {
+  width: 85%;
+  margin-left: 7%;
+}
+
+#pied #middlepied #parapied {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
